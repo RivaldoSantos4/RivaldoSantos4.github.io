@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+    
+    <title>Receitas</title>
+</head>
+<body>
+    <header id="header" >
+        <a id="logo" href="/">TiaNaCozinha</a>
+        <nav id="nav" >
+            <button aria-label="Abrir Menu"  id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu" >
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Receitas</a></li>
+                <li><a href="/">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <!--HERO-->
+            <section class="hero" aria-label="banner" >
+                <div class="banner-card">
+                    <h1 class="display-large">Bem-vindo à <br> Tia na Cozinha</h1>
+                    <div class="search-wrapper" data-search-form>
+                        <span class="material-symbols-outlined leading-icon" aria-hidden="true">local_dining</span>
+                        <input type="search" name="search" aria-label="Search recipes" class="search-field body-medium" placeholder="Pesquisar ..." data-search-field autocomplete="off">
+
+                        <button class="search-submit" aria-label="Submit" data-search-btn >
+
+                        <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                    </button>
+                    </div>
+                    <p class="label-medium">Prepare-se para uma experiência culinária única e comece a   <br>explorar nossas receitas exóticas agora.</p>
+                </div>
+            </section>
+        </article>
+
+        <div class="container1">
+            <h3 class="title"> RECENTES</h3>
+        </div>
+
+        <div class="container">
+            <div class="polaroid">
+              <a href="Pudimtp.html" class="receita-list">
+                  <img class="photo" src="assets/img/Receita-de-Pudim-Vegano-de-Tapioca-e-Coco-com-Xylitol.png" alt="">
+                  <div class="caption">
+                    <h2>Pudim de Tapioca</h2>
+                    <p>O pudim de tapioca é uma sobremesa deliciosa e tradicional, muito apreciada em várias regiões do Brasil.</p>
+              </a>
+              </div>
+            </div>
+          
+            <div class="polaroid">
+              <a href="Pate-de-frango-com-cenoura.html">
+                <img class="photo" src="assets/img/pate-origem-ingredientes-e-receitas-2.jpg" alt="">
+                <div class="caption">
+                  <h2>Patê De Frango Com Cenoura</h2>
+                  <p>Não existe nada mais satisfatório do que descobrir como preparar um delicioso patê de frango para saborear com um pão recém-saído do forno!</p>
+              </a>
+              </div>
+            </div>
+          
+            
+            </div>
+          </div>
+    </main>
+<script src="assets/script/script.js"></script>
+</body>
+</html>
