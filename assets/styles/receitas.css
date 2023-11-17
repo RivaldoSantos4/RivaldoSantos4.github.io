@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@font-face {
+    font-family: 'menu';
+    src: url('../fonts/menu.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'culinaria';
+    src: url('../fonts/culinaria.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*,
+*::before,
+*::after {
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+a, img, span, input, button {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    height: auto;
+}
+
+input, button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    color: inherit;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 1px rgb(165, 165, 165);
+    z-index: 9999;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    
+    font-size: 20px;
+    color: rgb(255, 174, 0);
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#logo {
+    color: rgb(255, 174, 0);
+    font-size: 1.8rem;
+    font-weight: bold; 
+    text-decoration: none;  
+    font-family: 'culinaria', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #logo {
+        font-size: 1.5rem;
+    }
+
+
+    #header {
+        justify-content: space-between;
+    }
+
+
+
+    #btn-mobile {
+        display: block;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: white;
+        height: 0px;
+        transition:  .6s;
+        z-index: 9999;
+        visibility: hidden;
+        overflow-y: auto;
+
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom:  2px solid rgba(0, 0, 0, .05);
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+
+
+
+
+/*hero*/
+
+.hero {
+    padding-inline: 16px;
+    margin-top: 90px;
+}
+
+.banner-card {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 1, 0.63), rgba(0,0,0,0)), url("../img/pexels-chan-walrus-958545.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    place-content: center;
+    padding-inline: 20px;
+    border-radius: 8px;
+}
+
+
+
+.banner-card h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'menu', sans-serif;
+    text-align: center;
+    line-height: 120%;
+    max-width: 948;
+    font-size: 45px;
+}
+
+.label-medium {
+    font-weight: 500;
+}
+
+.hero .search-wrapper {
+    position: relative;
+    color: hsl(0, 0%, 0%);
+    border-radius: 4px;
+    max-width: 480px;
+    width: 100%;
+    margin-inline: auto;
+    margin-block: 16px 12px;
+    overflow: hidden;
+}
+
+.hero .search-wrapper .leading-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.search-field {
+    height: 56px;
+    background-color: rgb(255, 255, 255);
+    padding-inline: 56px;
+    outline: none;
+}
+
+.search-submit {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    width: 48px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 174, 0);
+    border-radius: 4px;
+    transition: var(--transition-short);
+}
+
+:root {
+    --transition-short: 200ms var(--transition-timing-function);
+}
+
+.search-submit:where(:hover, :focus-visible):not(:active) {
+    background-color: rgb(221, 151, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .banner-card h1 {
+
+        font-size: 33px;
+    }
+}
+
+
+
+html {
+    overflow-x: hidden;
+}
+
+.container1{
+    text-transform: capitalize;
+    transition: all .2s linear;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:8rem 2rem;
+ }
+
+.container1 .title {
+    font-size: 3.5rem;
+    color: #444;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.container {
+    font-family: 'menu', Helvetica, sans-serif;
+    margin: 20px auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    padding: 0 20px;
+  
+  }
+  
+  .polaroid {
+    background: rgba(255, 174, 0, 0.164);
+    padding: 0px 0px 20px;
+  }
+  
+  .photo {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+  }
+  
+  .caption {
+    margin-top: 10px;
+  }
+
+  .caption h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .caption p {
+    font-size: .7rem;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    text-align: center;
+  }
+
