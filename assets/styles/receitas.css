@@ -351,3 +351,11 @@ html {
     text-align: center;
   }
 
+footer {
+    width: 100%;
+}
+
+#footer_content {
+    background-color: black;
+}
+
