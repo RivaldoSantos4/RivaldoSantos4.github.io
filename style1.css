@@ -13,42 +13,6 @@
     font-style: normal;
 }
 
-
-
-:root{
-    --white: #fff;
-    --black: #000;
-    --purple1: #7d1ad4;
-    --purple2: #6e17b9;
-}
-
-[data-theme="dark"]{
-    --white: #000;
-    --black: #fff;
-}
-
-#btn-dark-mode-toggle{
-    background-color: var(--purple1);
-    padding: .4rem;
-    border: none;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-}
-
-#btn-dark-mode-toggle:hover{
-    background-color: var(--purple2);
-    transition: .8s;
-}
-
-svg{
-    color: var(--white);
-    width: 24px;
-    height: 24px;
-}
-
-
 *,
 *::before,
 *::after {
@@ -56,39 +20,7 @@ svg{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
-}
-
-
-li {
-    list-style: none;
-}
-
-a, img, span, input, button {
-    display: block;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-img {
-    height: auto;
-}
-
-input, button {
-    background: none;
-    border: none;
-    font: inherit;
-}
-
-input {
-    width: 100%;
-}
-
-button {
-    color: inherit;
-    cursor: pointer;
+    
 }
 
 html {
@@ -101,6 +33,16 @@ html {
     flex-direction: column;
 }
 
+body{
+    background-color: var(--white);
+}
+
+/* Dark Theme */
+
+
+
+/* END Dark Theme */
+
 #header {
     width: 100%;
     position: fixed;
@@ -109,9 +51,16 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 1px rgb(165, 165, 165);
     z-index: 9999;
+}
+
+#logo {
+    color: rgb(255, 174, 0);
+    font-size: 1.8rem;
+    font-weight: bold;   
+    font-family: 'culinaria', Courier, monospace;
+    text-decoration: none;
 }
 
 #menu {
@@ -121,7 +70,6 @@ html {
 }
 
 #menu a {
-    
     font-size: 20px;
     color: rgb(255, 174, 0);
     font-family: 'Poppins', sans-serif;
@@ -130,24 +78,30 @@ html {
     text-decoration: none;
 }
 
+.nav-item {
+    list-style: none;
+}
+
+input, #btn-burguer {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+#btn-burguer {
+    color: inherit;
+    cursor: pointer;
+}
+
+a, img, span, input, #btn-burguer {
+    display: block;
+}
+
 #btn-mobile {
     display: none;
 }
 
-#logo {
-    color: rgb(255, 174, 0);
-    font-size: 1.8rem;
-    font-weight: bold; 
-    text-decoration: none;  
-    font-family: 'culinaria', Courier, monospace;
-}
-
-
-
-
-
-
-
+/* Media query */
 
 @media (max-width: 600px) {
     #logo {
@@ -228,12 +182,6 @@ html {
         top: -7px;
     }
 }
-
-
-
-
-
-/*hero*/
 
 .hero {
     padding-inline: 16px;
@@ -385,4 +333,6 @@ html {
     font-family: 'Poppins', Helvetica, sans-serif;
     text-align: center;
   }
+
+
 
