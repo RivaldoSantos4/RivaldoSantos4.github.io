@@ -23,7 +23,7 @@
 }
 
 [data-theme="dark"]{
-    --white: #000;
+    --white: #1a1919;
     --black: #fff;
 }
 
@@ -131,6 +131,7 @@ html {
     font-family: 'Poppins', sans-serif;
     display: block;
     padding: .5rem;
+    
     text-decoration: none;
 }
 
@@ -174,7 +175,7 @@ html {
         width: 100%;
         top: 70px;
         right: 0px;
-        background-color: white;
+        background-color: var(--white);
         height: 0px;
         transition:  .6s;
         z-index: 9999;
@@ -191,7 +192,7 @@ html {
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom:  2px solid rgba(0, 0, 0, .05);
+        border-bottom:  2px solid rgb(165, 165, 165);
     }
 
     #btn-mobile {

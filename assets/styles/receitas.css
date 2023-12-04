@@ -13,6 +13,43 @@
     font-style: normal;
 }
 
+:root{
+    --white: #fff;
+    --black: #000;
+    --purple1: #7d1ad4;
+    --purple2: #6e17b9;
+}
+
+[data-theme="dark"]{
+    --white: #1a1919;
+    --black: #fff;
+}
+
+body {
+    background-color: var(--white);
+}
+
+#btn-dark-mode-toggle{
+    background-color: var(--black);
+    padding: .4rem;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#btn-dark-mode-toggle:hover{
+    background-color: var(--black);
+    transition: .8s;
+}
+
+svg{
+    color: var(--white);
+    width: 18px;
+    height: 18px;
+}
+
 
 *,
 *::before,
@@ -72,9 +109,9 @@ html {
     padding: 1rem;
     height: 70px;
     display: flex;
+    background-color: var(--white);
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 1px rgb(165, 165, 165);
     z-index: 9999;
 }
@@ -135,7 +172,7 @@ html {
         width: 100%;
         top: 70px;
         right: 0px;
-        background-color: white;
+        background-color: var(--white);
         height: 0px;
         transition:  .6s;
         z-index: 9999;
@@ -152,7 +189,7 @@ html {
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom:  2px solid rgba(0, 0, 0, .05);
+        border-bottom:  2px solid rgb(165, 165, 165);
     }
 
     #btn-mobile {
@@ -169,6 +206,7 @@ html {
         display: block;
         width: 20px;
         border-top: 2px solid;
+        color: var(--black);
     }
     #hamburguer::after, #hamburguer::before {
         content: '';
@@ -179,6 +217,7 @@ html {
         margin-top: 5px;
         transition: .3s;
         position: relative;
+        color: var(--black);
     }
 
     #nav.active #hamburguer {
@@ -305,7 +344,7 @@ html {
 
 .container1 .title {
     font-size: 3.5rem;
-    color: #444;
+    color: var(--black);
     margin-bottom: 1rem;
     text-transform: uppercase;
     text-align: center;
@@ -341,11 +380,13 @@ html {
   }
 
   .caption h2 {
+    color: var(--black);
     font-size: 1.3rem;
     text-align: center;
   }
 
   .caption p {
+    color: var(--black);
     font-size: .7rem;
     font-family: 'Poppins', Helvetica, sans-serif;
     text-align: center;
