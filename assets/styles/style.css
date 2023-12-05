@@ -1,4 +1,7 @@
+/* Importação de fontes do Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Definição de fontes personalizadas */
 @font-face {
     font-family: 'menu';
     src: url('../fonts/menu.ttf') format('truetype');
@@ -13,25 +16,38 @@
     font-style: normal;
 }
 
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
-
-:root{
+/* Variáveis de cor */
+:root {
     --white: #fff;
     --black: #000;
     --purple1: #7d1ad4;
     --purple2: #6e17b9;
 }
 
-[data-theme="dark"]{
+/* Estilos para o tema escuro */
+[data-theme="dark"] {
     --white: #1a1919;
     --black: #fff;
 }
 
+/* Estilos globais de corpo */
 body {
     background-color: var(--white);
 }
 
-#btn-dark-mode-toggle{
+/* Botão de alternância do modo escuro */
+#btn-dark-mode-toggle {
     background-color: var(--black);
     padding: .4rem;
     border: none;
@@ -41,60 +57,69 @@ body {
     cursor: pointer;
 }
 
-#btn-dark-mode-toggle:hover{
+#btn-dark-mode-toggle:hover {
     background-color: var(--black);
     transition: .8s;
 }
 
-svg{
+/* Ícones gerais */
+svg {
     color: var(--white);
     width: 18px;
     height: 18px;
 }
 
-
+/* Reset de estilos e estilos globais */
 *,
 *::before,
 *::after {
     outline: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-
+/* Lista sem marcadores */
 li {
     list-style: none;
 }
 
+/* Estilos comuns para elementos de bloco */
 a, img, span, input, button {
     display: block;
 }
 
+/* Estilo de link padrão */
 a {
     color: inherit;
     text-decoration: none;
 }
+
+/* Estilo de imagem padrão */
 img {
     height: auto;
 }
 
+/* Estilos comuns para botões e inputs */
 input, button {
     background: none;
     border: none;
     font: inherit;
 }
 
+/* Estilo para inputs de largura total */
 input {
     width: 100%;
 }
 
+/* Estilo padrão para botões */
 button {
     color: inherit;
     cursor: pointer;
 }
 
+/* Configurações globais para o documento HTML */
 html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
@@ -105,6 +130,7 @@ html {
     flex-direction: column;
 }
 
+/* Estilos para o cabeçalho */
 #header {
     width: 100%;
     position: fixed;
@@ -118,6 +144,7 @@ html {
     z-index: 9999;
 }
 
+/* Estilos para o menu de navegação */
 #menu {
     display: flex;
     list-style: none;
@@ -125,50 +152,42 @@ html {
 }
 
 #menu a {
-    
     font-size: 20px;
     color: rgb(255, 174, 0);
     font-family: 'Poppins', sans-serif;
     display: block;
     padding: .5rem;
-    
     text-decoration: none;
 }
 
+/* Botão de menu para dispositivos móveis */
 #btn-mobile {
     display: none;
 }
 
+/* Estilo do logotipo */
 #logo {
     color: rgb(255, 174, 0);
     font-size: 1.8rem;
-    font-weight: bold; 
-    text-decoration: none;  
+    font-weight: bold;
+    text-decoration: none;
     font-family: 'culinaria', Courier, monospace;
 }
 
-
-
-
-
-
-
-
+/* Estilos de mídia para telas menores (máx. 600px) */
 @media (max-width: 600px) {
     #logo {
         font-size: 1.5rem;
     }
 
-
     #header {
         justify-content: space-between;
     }
 
-
-
     #btn-mobile {
         display: block;
     }
+
     #menu {
         display: block;
         position: absolute;
@@ -177,11 +196,10 @@ html {
         right: 0px;
         background-color: var(--white);
         height: 0px;
-        transition:  .6s;
+        transition: .6s;
         z-index: 9999;
         visibility: hidden;
         overflow-y: auto;
-
     }
 
     #nav.active #menu {
@@ -192,7 +210,7 @@ html {
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom:  2px solid rgb(165, 165, 165);
+        border-bottom: 2px solid rgb(165, 165, 165);
     }
 
     #btn-mobile {
@@ -211,6 +229,7 @@ html {
         border-top: 2px solid;
         color: var(--black);
     }
+
     #hamburguer::after, #hamburguer::before {
         content: '';
         display: block;
@@ -230,27 +249,24 @@ html {
     #nav.active #hamburguer::before {
         transform: rotate(135deg);
     }
+
     #nav.active #hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
     }
 }
 
-
-
-
-
-/*hero*/
-
+/* Estilos para a seção hero */
 .hero {
     padding-inline: 16px;
     margin-top: 90px;
 }
 
+/* Estilos para o banner na seção hero */
 .banner-card {
     background-color: rgb(0, 0, 0);
     color: white;
-    background-image:linear-gradient(rgba(0, 0, 1, 0.63), rgba(0,0,0,0)), url("../img/pexels-chan-walrus-958545.jpg");
+    background-image: linear-gradient(rgba(0, 0, 1, 0.63), rgba(0, 0, 0, 0)), url("../img/pexels-chan-walrus-958545.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -263,8 +279,7 @@ html {
     border-radius: 8px;
 }
 
-
-
+/* Estilos para o título no banner */
 .banner-card h1 {
     color: rgb(255, 255, 255);
     font-family: 'menu', sans-serif;
@@ -274,10 +289,12 @@ html {
     font-size: 45px;
 }
 
+/* Estilos para a descrição no banner */
 .label-medium {
     font-weight: 500;
 }
 
+/* Estilos para a caixa de pesquisa na seção hero */
 .hero .search-wrapper {
     position: relative;
     color: hsl(0, 0%, 0%);
@@ -289,6 +306,7 @@ html {
     overflow: hidden;
 }
 
+/* Estilos para o ícone na caixa de pesquisa */
 .hero .search-wrapper .leading-icon {
     position: absolute;
     top: 50%;
@@ -296,6 +314,7 @@ html {
     transform: translateY(-50%);
 }
 
+/* Estilos para o campo de pesquisa */
 .search-field {
     height: 56px;
     background-color: rgb(255, 255, 255);
@@ -303,6 +322,7 @@ html {
     outline: none;
 }
 
+/* Estilos para o botão de pesquisa */
 .search-submit {
     position: absolute;
     top: 4px;
@@ -316,34 +336,31 @@ html {
     transition: var(--transition-short);
 }
 
-:root {
-    --transition-short: 200ms var(--transition-timing-function);
-}
-
+/* Estilos para o botão de pesquisa ao passar o mouse */
 .search-submit:where(:hover, :focus-visible):not(:active) {
     background-color: rgb(221, 151, 0);
 }
 
+/* Estilos adicionais para telas menores (máx. 768px) */
 @media screen and (max-width: 768px) {
     .banner-card h1 {
-
         font-size: 33px;
     }
 }
 
-
-
+/* Estilos gerais para evitar rolagem horizontal */
 html {
     overflow-x: hidden;
 }
 
-.container1{
+/* Estilos para o contêiner de títulos "RECENTES" */
+.container1 {
     text-transform: capitalize;
     transition: all .2s linear;
     max-width: 1200px;
-    margin:0 auto;
-    padding:2rem 2rem;
- }
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
 
 .container1 .title {
     font-size: 2.5rem;
@@ -353,7 +370,7 @@ html {
     text-align: center;
 }
 
-
+/* Estilos para o contêiner principal de receitas */
 .container {
     font-family: 'menu', Helvetica, sans-serif;
     margin: 20px auto;
@@ -364,34 +381,37 @@ html {
     grid-row-gap: 40px;
     justify-content: center;
     padding: 0 20px;
-  
-  }
-  
-  .polaroid {
+}
+
+/* Estilos para as polaroids (cartões de receitas) */
+.polaroid {
     background: rgba(255, 174, 0, 0.164);
     padding: 0px 0px 20px;
-  }
-  
-  .photo {
+}
+
+/* Estilos para a imagem da receita */
+.photo {
     width: 100%;
     height: 190px;
     object-fit: cover;
-  }
-  
-  .caption {
-    margin-top: 10px;
-  }
+}
 
-  .caption h2 {
+/* Estilos para a legenda da receita */
+.caption {
+    margin-top: 10px;
+}
+
+/* Estilos para o título da receita */
+.caption h2 {
     color: var(--black);
     font-size: 1.3rem;
     text-align: center;
-  }
+}
 
-  .caption p {
+/* Estilos para a descrição da receita */
+.caption p {
     color: var(--black);
     font-size: .7rem;
     font-family: 'Poppins', Helvetica, sans-serif;
     text-align: center;
-  }
-
+}

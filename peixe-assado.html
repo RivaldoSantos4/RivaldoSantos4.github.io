@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/recips.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7017375467592415" crossorigin="anonymous"></script>
+    <title>Receitas - Nova Página</title>
+</head>
+<body>
+    <header id="header">
+        <a id="logo" href="/">TiaNaCozinha</a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+            </ul>
+        </nav>
+        <button id="btn-dark-mode-toggle"></button>
+    </header>
+
+    <main class="page">
+        <!-- Nova Receita -->
+        <div class="recipe-page">
+            <section class="recipe-hero">
+                <img src="assets/img/peixeassado.jpg" class="img recipe-hero-img" />
+                <article class="recipe-info">
+                    <h2>Peixe Assado</h2>
+                    <p>Uma receita saudável e saborosa de peixe assado, perfeita para uma refeição leve e nutritiva. Surpreenda-se com o tempero especial!</p>
+                    <div class="recipe-icons">
+                        <article>
+                            <i class="fas fa-clock"></i>
+                            <h5>Tempo de Preparo</h5>
+                            <p>40 min.</p>
+                        </article>
+                        <article>
+                            <i class="far fa-clock"></i>
+                            <h5>Forno</h5>
+                            <p>25 min.</p>
+                        </article>
+                        <article>
+                            <i class="fas fa-user-friends"></i>
+                            <h5>Porções</h5>
+                            <p>4.</p>
+                        </article>
+                    </div>
+                </article>
+            </section>
+            <!-- Content -->
+            <article class="second-column">
+                <div class="custom-checkbox">
+                    <div>
+                        <h4>Ingredientes</h4>
+                        <div class="custom-checkbox">
+                            <!-- Adicione aqui os ingredientes da nova receita -->
+                            <p class="single-ingredient">
+                                <input type="checkbox" id="checkbox7">
+                                <label for="checkbox7">4 filés de peixe (pode ser tilápia, robalo, etc.)</label>
+                            </p>
+                            <p class="single-ingredient">
+                                <input type="checkbox" id="checkbox8">
+                                <label for="checkbox8">Suco de 1 limão</label>
+                            </p>
+                            <p class="single-ingredient">
+                                <input type="checkbox" id="checkbox9">
+                                <label for="checkbox9">3 colheres de sopa de azeite de oliva</label>
+                            </p>
+                            <p class="single-ingredient">
+                                <input type="checkbox" id="checkbox10">
+                                <label for="checkbox10">2 dentes de alho picados</label>
+                            </p>
+                            <p class="single-ingredient">
+                                <input type="checkbox" id="checkbox11">
+                                <label for="checkbox11">Sal e pimenta a gosto</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Modo de Preparo -->
+        <section class="recipe-content">
+            <article>
+                <h4>Modo de Preparo</h4>
+                <!-- Adicione aqui os passos do modo de preparo da nova receita -->
+                <div class="single-instruction">
+                    <header>
+                        <p>Passo 1</p>
+                        <div></div>
+                    </header>
+                    <p>Tempere os filés de peixe com o suco de limão, azeite de oliva, alho picado, sal e pimenta. Deixe marinar por 15 minutos.</p>
+                </div>
+                <div class="single-instruction">
+                    <header>
+                        <p>Passo 2</p>
+                        <div></div>
+                    </header>
+                    <p>Preaqueça o forno a 200°C.</p>
+                </div>
+                <div class="single-instruction">
+                    <header>
+                        <p>Passo 3</p>
+                        <div></div>
+                    </header>
+                    <p>Coloque os filés em uma assadeira e asse por 25 minutos ou até que o peixe esteja cozido e dourado.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
