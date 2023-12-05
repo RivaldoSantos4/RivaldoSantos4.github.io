@@ -108,7 +108,47 @@ html {
 }
 
 
+/* Variáveis de cor */
+:root {
+    --white: #fff;
+    --black: #000;
+    --purple1: #7d1ad4;
+    --purple2: #6e17b9;
+}
 
+/* Estilos para o tema escuro */
+[data-theme="dark"] {
+    --white: #1a1919;
+    --black: #fff;
+}
+
+/* Estilos globais de corpo */
+body {
+    background-color: var(--white);
+}
+
+/* Botão de alternância do modo escuro */
+#btn-dark-mode-toggle {
+    background-color: var(--black);
+    padding: .4rem;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#btn-dark-mode-toggle:hover {
+    background-color: var(--black);
+    transition: .8s;
+}
+
+/* Ícones gerais */
+svg {
+    color: var(--white);
+    width: 18px;
+    height: 18px;
+}
 
 
 
@@ -194,115 +234,29 @@ html {
     }
 }
 
-
-
-
-
-/*hero*/
-
-.hero {
-    padding-inline: 16px;
-    margin-top: 90px;
-}
-
-.banner-card {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    background-image:linear-gradient(rgba(0, 0, 1, 0.63), rgba(0,0,0,0)), url("../img/pexels-chan-walrus-958545.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 380px;
-    display: grid;
-    grid-template-columns: 1fr;
+article {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    place-content: center;
-    padding-inline: 20px;
-    border-radius: 8px;
+    max-width: 800px; /* Adicione esta linha para definir a largura máxima desejada */
 }
 
-
-
-.banner-card h1 {
-    color: rgb(255, 255, 255);
-    font-family: 'menu', sans-serif;
-    text-align: center;
-    line-height: 120%;
-    max-width: 948;
-    font-size: 45px;
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+    line-height: 1.6em;
 }
 
-.label-medium {
-    font-weight: 500;
-}
-
-.hero .search-wrapper {
-    position: relative;
-    color: hsl(0, 0%, 0%);
-    border-radius: 4px;
-    max-width: 480px;
-    width: 100%;
-    margin-inline: auto;
-    margin-block: 16px 12px;
-    overflow: hidden;
-}
-
-.hero .search-wrapper .leading-icon {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-}
-
-.search-field {
-    height: 56px;
-    background-color: rgb(255, 255, 255);
-    padding-inline: 56px;
-    outline: none;
-}
-
-.search-submit {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    bottom: 4px;
-    width: 48px;
-    display: grid;
-    place-items: center;
-    background-color: rgb(255, 174, 0);
-    border-radius: 4px;
-    transition: var(--transition-short);
-}
-
-:root {
-    --transition-short: 200ms var(--transition-timing-function);
-}
-
-.search-submit:where(:hover, :focus-visible):not(:active) {
-    background-color: rgb(221, 151, 0);
-}
-
-@media screen and (max-width: 768px) {
-    .banner-card h1 {
-
-        font-size: 33px;
-    }
-}
-
-
-
-html {
-    overflow-x: hidden;
-    
-}
-
-.container1{
+.container1 {
     text-transform: capitalize;
     transition: all .2s linear;
     max-width: 1200px;
-    margin:0 auto;
-    padding:8rem 2rem;
- }
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
 
 .container1 .title {
     font-size: 3.5rem;
@@ -312,27 +266,18 @@ html {
     text-align: center;
 }
 
-article {
-    margin-top: 100px;
-    margin-left: 30px;
-    margin-right: 30px;
-    
+@media screen and (max-width: 768px) {
+    .container1 .title {
+        font-size: 2.5rem;
+    }
 }
 
-main p {
-    
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1.1em;
-    line-height: 1.6em;
-    
-}
-
-
-main {
-    box-shadow: 1px 1px 10px 4px rgba(112, 112, 112, 0.212);
-    margin: auto;
-    min-width: 300px;
-    max-width: 1000px;
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
