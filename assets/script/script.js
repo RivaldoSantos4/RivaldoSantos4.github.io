@@ -41,3 +41,228 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+
+
+
+function loadItem(item) {
+
+    var contentDiv = document.getElementById("content");
+
+
+    switch (item) {
+        case 'item1':
+            contentDiv.innerHTML = `<div class="container">
+                 <div class="polaroid">
+                <a href="bolo-de-chocolate.html">
+                    <img class="photo" src="assets/img/bolo-de-chocolate-com-recheio-de-leite-ninho.jpg" alt="">
+                    <div class="caption">
+                        <h2>BOLO DE CHOCOLATE COM RECHEIO DE NINHO</h2>
+                        <p>Um bolo de chocolate delicioso com recheio de Ninho. Uma combinação perfeita de massa macia de chocolate e um recheio cremoso que vai te conquistar. Simplesmente irresistível!</p>
+                    </div>
+                </a>
+                  </div>
+
+                        <div class="polaroid">
+                    <a href="bombomdechocolate.html">
+                        <img class="photo" src="assets/img/bombom.jpg" alt="">
+                        <div class="caption">
+                            <h2>Bombom De Chocolate</h2>
+                            <p>
+                                O bombom de chocolate é puro prazer em cada mordida, com sua casquinha crocante e um recheio irresistivelmente gostoso.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="polaroid">
+                <a href="brigadeiro.html">
+                    <img class="photo" src="assets/img/brigadeiro.jpg" alt="">
+                    <div class="caption">
+                        <h2>Brigadeiro</h2>
+                        <p>O brigadeiro é uma explosão de sabor em formato de pequenas porções de felicidade.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+            <a href="docedeabobora.html">
+                <img class="photo" src="assets/img/doce-de-abobora.jpg" alt="">
+                <div class="caption">
+                    <h2>Doce de Abóbora</h2>
+                    <p>O doce de abóbora é uma iguaria tradicional que encanta com sua simplicidade e sabor reconfortante.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="polaroid">
+                <a href="docinho-rapido.html">
+                    <img class="photo" src="assets/img/rapido.jpg" alt="">
+                    <div class="caption">
+                        <h2>Docinho Rapido</h2>
+                        <p>Que tal experimentar uma receita rápida e fácil para satisfazer seu desejo por doce em minutos?</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+            <a href="sorvetedechocolate.html">
+                <img class="photo" src="assets/img/sorvetechocolate.jpg" alt="">
+                <div class="caption">
+                    <h2>Sorvete de Chocolate</h2>
+                    <p>O sorvete de chocolate é uma sobremesa clássica e indulgente que conquista os amantes de chocolate em todo o mundo.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="polaroid">
+                <a href="pudimdeleitecondensado.html">
+                    <img class="photo" src="assets/img/pudimdeleite.jpg" alt="">
+                    <div class="caption">
+                        <h2>Pudim de Leite Condensado</h2>
+                        <p>O pudim de leite condensado é uma sobremesa clássica e deliciosa, muito apreciada por sua textura cremosa e sabor adocicado.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+            <a href="moussedemaracuja.html">
+                <img class="photo" src="assets/img/moussedemaracuja.jpg" alt="">
+                <div class="caption">
+                    <h2>Mousse de Maracujá </h2>
+                    <p>O mousse de maracujá é uma sobremesa leve e refrescante, muito apreciada por sua combinação única de doçura e acidez.</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="polaroid">
+                <a href="Pudimtp.html" class="receita-list">
+                    <img class="photo" src="assets/img/Pudim_de_tapioca.jpg" alt="">
+                    <div class="caption">
+                        <h2>Pudim de Tapioca</h2>
+                        <p>O pudim de tapioca é uma sobremesa deliciosa e tradicional, muito apreciada em várias regiões do Brasil.</p>
+                    </div>
+                </a>
+            </div>
+
+
+
+        
+            </div>`;
+            break;
+        case 'item2':
+            contentDiv.innerHTML = `<div class="container"> 
+            <div class="polaroid">
+                <a href="lasanhabolonhesa.html">
+                    <img class="photo" src="assets/img/lasanhabolonhesa.jpg" alt="">
+                    <div class="caption">
+                        <h2>Lasanha à Bolonhesa</h2>
+                        <p>
+                            A lasanha à bolonhesa é um clássico da culinária italiana que cativa paladares com sua camada de massas intercaladas com um recheio rico e saboroso.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="Macarraoacarbonara.html">
+                    <img class="photo" src="assets/img/carbonara.jpg" alt="">
+                    <div class="caption">
+                        <h2>Macarrão à Carbonara</h2>
+                        <p>O macarrão à carbonara é um prato italiano simples e delicioso, conhecido por sua combinação irresistível de massa, ovos, queijo e bacon (ou pancetta).</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="macarraoaoalhoeoleo.html">
+                    <img class="photo" src="assets/img/macarraoalho.jpg" alt="">
+                    <div class="caption">
+                        <h2>Macarrão ao Alho e Óleo</h2>
+                        <p>O macarrão ao alho e óleo é um prato clássico italiano conhecido por sua simplicidade e sabor marcante.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="quichelorraine.html">
+                    <img class="photo" src="assets/img/quichelorraine.jpg" alt="">
+                    <div class="caption">
+                        <h2>Quiche Lorraine</h2>
+                        <p>A Quiche Lorraine é uma especialidade da culinária francesa, conhecida por sua base de massa quebrada recheada com uma mistura rica de bacon, creme de leite e ovos.</p>
+                    </div>
+                </a>
+            </div>
+
+
+            </div>`;
+            break;
+        case 'item3':
+            contentDiv.innerHTML = `<div class="container">
+            <div class="polaroid">
+                <a href="frangoaocurry.html">
+                    <img class="photo" src="assets/img/frangocurry.jpg" alt="">
+                    <div class="caption">
+                        <h2>Frango ao Curry</h2>
+                        <p>
+                            O frango ao curry é um prato aromático e delicioso que combina pedaços suculentos de frango com um molho rico em especiarias.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="coxinhadefrango.html">
+                    <img class="photo" src="assets/img/coxinhadefrango.jpg" alt="">
+                    <div class="caption">
+                        <h2>Coxinha de Frango</h2>
+                        <p>A coxinha de frango é um clássico salgado brasileiro que combina massa macia e recheio suculento.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="sanduiche-mel-mostarda.html">
+                    <img class="photo" src="assets/img/molho-de-mostarda-caseiro_28032017070631.jpg" alt="">
+                    <div class="caption">
+                        <h2>Sanduíche Mel e Mostarda</h2>
+                        <p>O Sanduíche Mel e Mostarda é uma explosão de sabores agridoces em cada mordida. Com pão dourado e queijo derretido.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="Pate-de-frango-com-cenoura.html">
+                    <img class="photo" src="assets/img/pate.jpg" alt="">
+                    <div class="caption">
+                        <h2>Patê De Frango Com Cenoura</h2>
+                        <p>Não existe nada mais satisfatório do que descobrir como preparar um delicioso patê de frango para saborear com um pão recém-saído do forno!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="peixe-assado.html">
+                    <img class="photo" src="assets/img/peixeassado.jpg" alt="">
+                    <div class="caption">
+                        <h2>Peixe Assado</h2>
+                        <p>O peixe assado é uma opção saudável e deliciosa que destaca os sabores naturais do peixe.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="polaroid">
+                <a href="risotodeFunghi.html">
+                    <img class="photo" src="assets/img/risoto.jpg" alt="">
+                    <div class="caption">
+                        <h2>risoto funghi</h2>
+                        <p>O risoto funghi é uma variação saborosa e sofisticada do clássico risoto italiano, destacando o sabor distintivo dos cogumelos funghi.</p>
+                    </div>
+                </a>
+            </div>
+
+
+            </div>
+            `;
+            break;
+        default:
+            contentDiv.innerHTML = "<RECENTES</h2><p>Selecione uma categoria para carregar o conteúdo.</p>";
+   }
+}
