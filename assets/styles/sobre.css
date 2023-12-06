@@ -238,7 +238,7 @@ svg {
 }
 
 article {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -246,6 +246,7 @@ article {
     color: var(--black);
     box-shadow: 0px 0px 10px 1px rgba(255, 174, 0, 0.322);
     background-color: var(--white);
+    padding: 20px;
 }
 
 main p {
