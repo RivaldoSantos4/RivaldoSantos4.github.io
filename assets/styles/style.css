@@ -420,14 +420,19 @@ html {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+    margin: 10px;
+    
+    
 }
 
 .categories {
-    width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #ff0000;
+    background-color: rgb(87, 17, 17);
     padding: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
 }
 
 .categories h2 {
@@ -444,11 +449,20 @@ html {
 
 .categories li {
     display: flex;
-
     cursor: pointer;
     padding: 8px;
     margin-left: 10px;
-    background-color: #ddd;
+    background-color: rgb(255, 174, 0);
+    border-radius: 10px;
+    font-size: 30px;
+    
+
 }
 
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: var(--black);
+}
 
