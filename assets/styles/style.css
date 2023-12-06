@@ -175,6 +175,7 @@ html {
 
 /* Estilos de mídia para telas menores (máx. 600px) */
 @media (max-width: 600px) {
+
     #logo {
         font-size: 1.5rem;
     }
@@ -445,6 +446,7 @@ html {
     justify-content: space-around;
     list-style: none;
     padding: 0;
+    
 }
 
 .categories li {
@@ -454,9 +456,7 @@ html {
     margin-left: 10px;
     background-color: rgb(255, 174, 0);
     border-radius: 10px;
-    font-size: 30px;
-    
-
+    font-size: 1rem;  
 }
 
 .title {
